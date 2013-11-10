@@ -20,70 +20,70 @@
 </script>
 <script>
 $(document).ready(function() {
-	//vendor script
-	$('.header')
-	.css({ 'top':-90 })
-	.delay(2000)
-	.animate({'top': 0}, 800);
-	
-	$('.footer')
-	.css({ 'bottom':-26 })
-	.delay(1500)
-	.animate({'bottom': 0}, 800);
+        //vendor script
+        $('.header')
+        .css({ 'top':-90 })
+        .delay(2000)
+        .animate({'top': 0}, 800);
+        
+        $('.footer')
+        .css({ 'bottom':-26 })
+        .delay(1500)
+        .animate({'bottom': 0}, 800);
 
 });
-	//blocksit define
-	$(window).load( function() {
-		$('.container').BlocksIt({
-			numOfCol: auto,
-			offsetX: 8,
-			offsetY: 8
-		});
-	});
-	
+        //blocksit define
+        $(window).load( function() {
+                $('.container').BlocksIt({
+                        numOfCol: auto,
+                        offsetX: 8,
+                        offsetY: 8
+                });
+        });
+        
 
-	//window resize
-	var currentWidth = 1100;
-	$(window).resize(function() {
-		var winWidth = $(window).width();
-		var conWidth;
-		if(winWidth < 786) {
-			conWidth = 740;
-			col = auto
-		} else if(winWidth < 956) {
-			conWidth = 900;
-			col = auto
-		} else {
-			conWidth = 1100;
-			col = auto;
-		}
-		
-		if(conWidth != currentWidth) {
-			currentWidth = conWidth;
-			$('.container').width(conWidth);
-			$('.container').BlocksIt({
-				numOfCol: col,
-				offsetX: 8,
-				offsetY: 8
-			});
-		}
-	});
-	
+        //window resize
+        var currentWidth = 1100;
+        $(window).resize(function() {
+                var winWidth = $(window).width();
+                var conWidth;
+                if(winWidth < 786) {
+                        conWidth = 740;
+                        col = auto
+                } else if(winWidth < 956) {
+                        conWidth = 900;
+                        col = auto
+                } else {
+                        conWidth = 1100;
+                        col = auto;
+                }
+                
+                if(conWidth != currentWidth) {
+                        currentWidth = conWidth;
+                        $('.container').width(conWidth);
+                        $('.container').BlocksIt({
+                                numOfCol: col,
+                                offsetX: 8,
+                                offsetY: 8
+                        });
+                }
+        });
+        
 
 </script>
 <style type="text/css">
 *{
-	/* Universal reset */
-	margin:0;
-	padding:0;
+        /* Universal reset */
+        margin:0;
+        padding:0;
 }
 
 body{
-	/* Setting default text color, background and a font stack */
-	color: #EAEAEA;
-	font-size:0.825em;
-	background-color: #ffffff;
-	font-family:"Segoe UI", Arial, Helvetica, sans-serif;
+        /* Setting default text color, background and a font stack */
+        color: #EAEAEA;
+        font-size:0.825em;
+        background-color: #ffffff;
+        font-family:"Segoe UI", Arial, Helvetica, sans-serif;
     width: 90%; 
     min-width: 800px; 
     margin: auto;
@@ -99,9 +99,9 @@ body{
 {
 
   font-size:11px;
-	height:25px;
-	float:right;
-	width:90%;
+        height:25px;
+        float:right;
+        width:90%;
   position:fixed;
   bottom: 0px;
 
@@ -110,22 +110,22 @@ body{
 ul.win7,
 ul.win7 li
 {
-	padding:0px;
-	margin:0px;
+        padding:0px;
+        margin:0px;
 
-	list-style-type:none;
+        list-style-type:none;
 }
 
 ul.win7 li
 {
     width:24.6%;
-   	background-color: black;
-	height:25px;
-	line-height:25px;
-	display:inline;
-	float:left;
+           background-color: black;
+        height:25px;
+        line-height:25px;
+        display:inline;
+        float:left;
     border: white solid 2px;
-	text-align:center;
+        text-align:center;
 }
 
 
@@ -142,146 +142,146 @@ a, span
 }
 
 a:hover, a:active{
-	color:#91DCFF;
+        color:#91DCFF;
 }
 .header{
-	width:90%;
+        width:90%;
     min-width: 1000px;
     height: 90px;
-	background:#000;
-	background:rgba(0, 0, 0, 0.6);
-	padding:0px 0;
+        background:#000;
+        background:rgba(0, 0, 0, 0.6);
+        padding:0px 0;
     top:0px;
-	letter-spacing:1px;
-	margin-bottom:0px;
-	position:fixed;
-	z-index:99;
+        letter-spacing:1px;
+        margin-bottom:0px;
+        position:fixed;
+        z-index:99;
 
 }
 .footer{
 
   min-width: 1000px;
       height: 28px;
-	padding:0px 0;
+        padding:0px 0;
 
-	letter-spacing:1px;
+        letter-spacing:1px;
 
-	position:fixed;
-	z-index:98;
+        position:fixed;
+        z-index:98;
     bottom:0px;
 }
 .header h1{
-	padding:0 0px;
-	margin:0px 0;
-	text-shadow:2px 1px 1px #333, 2px 2px 1px #888;
-	color:#EAEAEA;
-	font-size:40px;
+        padding:0 0px;
+        margin:0px 0;
+        text-shadow:2px 1px 1px #333, 2px 2px 1px #888;
+        color:#EAEAEA;
+        font-size:40px;
 }
 .header h3{
-	padding:0 0px;
-	margin:0px 0;
-	text-shadow:2px 1px 1px #333, 2px 2px 1px #888;
-	color:#EAEAEA;
-	font-size:15px;
+        padding:0 0px;
+        margin:0px 0;
+        text-shadow:2px 1px 1px #333, 2px 2px 1px #888;
+        color:#EAEAEA;
+        font-size:15px;
 }
 
 
 .container{
-	position:relative;
-	width:100%;
+        position:relative;
+        width:100%;
     top: 90px;
-	
+    bottom:555px;  
 }
 
 .grid{
-	padding: 10px;
-	background:#fff;
-	margin:8px;
-	font-size:12px;
-	float:left;
-	box-shadow: 0 1px 3px rgba(34,25,25,0.4);
-	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
-	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
-	
-	-webkit-transition: top 1s ease, left 1s ease;
-	-moz-transition: top 1s ease, left 1s ease;
-	-o-transition: top 1s ease, left 1s ease;
-	-ms-transition: top 1s ease, left 1s ease;
+        padding: 10px;
+        background:#fff;
+        margin:8px;
+        font-size:12px;
+        float:left;
+        box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+        -moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+        -webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+        
+        -webkit-transition: top 1s ease, left 1s ease;
+        -moz-transition: top 1s ease, left 1s ease;
+        -o-transition: top 1s ease, left 1s ease;
+        -ms-transition: top 1s ease, left 1s ease;
 }
 
 .grid strong {
-	border-bottom:1px solid #ccc;
-	margin:5px 0;
-	display:block;
-	padding:0 0 5px;
-	font-size:17px;
+        border-bottom:1px solid #ccc;
+        margin:5px 0;
+        display:block;
+        padding:0 0 5px;
+        font-size:17px;
 }
 .grid .meta{
-	text-align:right;
-	color:#777;
-	font-style:italic;
+        text-align:right;
+        color:#777;
+        font-style:italic;
 }
 .grid .imgholder img{
-	max-width:100%;
-	background:#ccc;
-	display:block;
+        max-width:100%;
+        background:#ccc;
+        display:block;
 }
 
 @media screen and (max-width : 1240px) {
-	body{
-		overflow:auto;
-	}
+        body{
+                overflow:auto;
+        }
 }
 @media screen and (max-width : 900px) {
-	#backlinks{
-		float:none;
-		clear:both;
-	}
-	#backlinks a{
-		display:inline-block;
-		padding-right:20px;
-	}
-	#wrapper{
-		margin-top:90px;
-	}
+        #backlinks{
+                float:none;
+                clear:both;
+        }
+        #backlinks a{
+                display:inline-block;
+                padding-right:20px;
+        }
+        #wrapper{
+                margin-top:90px;
+        }
 }
 
 .block{
-	padding: 15px;
-	background:#fff;
+        padding: 15px;
+        background:#fff;
 
-	line-height:1.7;
-	box-shadow: 0 1px 3px rgba(34,25,25,0.4);
-	-moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
-	-webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
-	
-	transition: box-shadow 1s;
-	-moz-transition: -moz-box-shadow 1s;
-	-webkit-transition: -webkit-box-shadow 1s;
+        line-height:1.7;
+        box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+        -moz-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+        -webkit-box-shadow: 0 1px 3px rgba(34,25,25,0.4);
+        
+        transition: box-shadow 1s;
+        -moz-transition: -moz-box-shadow 1s;
+        -webkit-transition: -webkit-box-shadow 1s;
 }
 .block:hover {
-	box-shadow: 0 1px 13px rgba(34,25,25,1);
-	-moz-box-shadow: 0 1px 13px rgba(34,25,25,1);
-	-webkit-box-shadow: 0 1px 13px rgba(34,25,25,1);
+        box-shadow: 0 1px 13px rgba(34,25,25,1);
+        -moz-box-shadow: 0 1px 13px rgba(34,25,25,1);
+        -webkit-box-shadow: 0 1px 13px rgba(34,25,25,1);
 }
 
 .block h3{
-	font-size:22px;
-	color:#7A8489;
-	margin:0 5px;
-	padding-bottom:5px;
-	padding-left:10px;
-	text-align:left;
-	text-shadow:1px 1px 0 #fff, 2px 2px 1px #ccc;
-	font-family:'Arial Narrow', Arial, Helvetica, sans-serif;
-	border-bottom:4px double #ccc;
+        font-size:22px;
+        color:#7A8489;
+        margin:0 5px;
+        padding-bottom:5px;
+        padding-left:10px;
+        text-align:left;
+        text-shadow:1px 1px 0 #fff, 2px 2px 1px #ccc;
+        font-family:'Arial Narrow', Arial, Helvetica, sans-serif;
+        border-bottom:4px double #ccc;
 }
 .block pre{
-	background:#F4FAFC;
-	padding:15px;
-	margin:0 25px;
-	border:1px solid #ADC6D1;
-	line-height:1.8;
+        background:#F4FAFC;
+        padding:15px;
+        margin:0 25px;
+        border:1px solid #ADC6D1;
+        line-height:1.8;
 }
 .options{
     width: 250px;
@@ -291,20 +291,20 @@ a:hover, a:active{
  text-align: center;
  }
 .options strong{
-	font-size:14px;
-	text-decoration:underline;
+        font-size:14px;
+        text-decoration:underline;
 
     color: blue;
 }
 .options em{
-	font-size:12px;
-	font-weight:bold;
-	color: #91DCFF;
+        font-size:12px;
+        font-weight:bold;
+        color: #91DCFF;
      
 }
 .options span{
-	color: #2E2E2E;
-	font-size:12px;
+        color: #2E2E2E;
+        font-size:12px;
 }
 </style>
   </head>
@@ -337,47 +337,47 @@ a:hover, a:active{
 
     <div class="container">
 
-		<div class="block grid fb-post" data-href="https://www.facebook.com/photo.php?fbid=379266465550868&amp;set=a.364428990367949.1073741829.356605531150295&amp;type=1"></div>
+                <div class="block grid fb-post" data-href="https://www.facebook.com/photo.php?fbid=379266465550868&amp;set=a.364428990367949.1073741829.356605531150295&amp;type=1"></div>
         
-        <div class="block grid fb-post" data-href="https://www.facebook.com/PremPishe/posts/371170016360513" data-width="350"></div>
-    
-        
+        <div class="block grid">
+                <div class="imgholder">
+                        <img src="http://www.inwebson.com/demo/blocksit-js/demo2/images/img27.jpg" width="250" height="300" />
+                </div>
+                <strong>Sunset Lake</strong>
+                <p>A peaceful sunset view...</p>
+                <div class="meta">by j osborn</div>
+        </div>
         
         
         <div class="block grid options">
-		<h3>Upcoming Events</h3>
-		<p>
-			<strong>On Nov 19</strong>
-			<em></em> <br/>
-			<span>Follow Our Event <a style="color: green;" href="https://www.facebook.com/prempishe">Prem Pishe</a></span>
-		</p>	
-		<p>
-			<strong></strong>
-			<em></em><br/>
-			<span></span>
-		</p>	
-		<p>
-			<strong></strong>
-			<em></em><br/>
-			<span></span>
+                <h3>Upcoming Events</h3>
+                <p>
+                        <strong>On Nov 19</strong>
+                        <em></em> <br/>
+                        <span>Follow Our Event <a style="color: green;" href="https://www.facebook.com/prempishe">Prem Pishe</a></span>
+                </p>        
+                <p>
+                        <strong></strong>
+                        <em></em><br/>
+                        <span></span>
+                </p>        
+                <p>
+                        <strong></strong>
+                        <em></em><br/>
+                        <span></span>
             <span></span>
             <span></span>
-		</p>	
-	</div>
+                </p>        
+        </div>
         
         
         
+               <div class="block grid fb-post" data-href="https://www.facebook.com/PremPishe/posts/371170016360513"></div>
+    
         
         <div class="block grid fb-post" data-href="https://www.facebook.com/PremPishe/posts/382447701899411" data-width="550"><div class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/PremPishe/posts/382447701899411">Post</a> by <a href="https://www.facebook.com/PremPishe">प्रेमपिशे - Prem Pishe</a>.</div></div>
-	
-	<div class="block grid">
-		<div class="imgholder">
-			<img src="http://www.inwebson.com/demo/blocksit-js/demo2/images/img27.jpg" width="250" height="300" />
-		</div>
-		<strong>Sunset Lake</strong>
-		<p>A peaceful sunset view...</p>
-		<div class="meta">by j osborn</div>
-        </div>
+        
+        
         
 
 
@@ -400,17 +400,17 @@ a:hover, a:active{
           </script>
 
 <ul class="footer win7">
-		<li><a href="https://www.facebook.com/PremPishe"><strong>Prem Pishe on Facebook</strong></a></li>
-		<li><a href="shows.html"><strong>Upcomming Shows</strong></a></li>
-		<li><span class="nolink"><strong>Mob : 9673171992 / 9922442759 </strong></span></li>
-		<li><span class="nolink"><strong>E-mail: prempishe@gmail.com</strong></span></li>
-	</ul>
-		  
-		  
-		  
-		  
-		  
-		  
-		  
+                <li><a href="https://www.facebook.com/PremPishe"><strong>Prem Pishe on Facebook</strong></a></li>
+                <li><a href="shows.html"><strong>Upcomming Shows</strong></a></li>
+                <li><span class="nolink"><strong>Mob : 9673171992 / 9922442759 </strong></span></li>
+                <li><span class="nolink"><strong>E-mail: prempishe@gmail.com</strong></span></li>
+        </ul>
+                  
+                  
+                  
+                  
+                  
+                  
+                  
   </body>
 </html>
