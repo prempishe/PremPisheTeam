@@ -81,8 +81,9 @@ $(document).ready(function() {
 body{
         /* Setting default text color, background and a font stack */
         color: #EAEAEA;
-        font-size:0.825em;
-        background-color: #ffffff;
+        font-size:8px;
+        font-weight: bolder;
+        background-image: url(https://m.ak.fbcdn.net/sphotos-b.ak/hphotos-ak-ash3/1422418_379266465550868_558393806_n.jpg) ;
         font-family:"Segoe UI", Arial, Helvetica, sans-serif;
     width: 90%; 
     min-width: 800px; 
@@ -195,7 +196,7 @@ a:hover, a:active{
 
 .grid{
         padding: 10px;
-        background:#fff;
+        background:rgba(256, 256, 256, 0.6);
         margin:8px;
         font-size:12px;
         float:left;
@@ -210,15 +211,24 @@ a:hover, a:active{
 }
 
 .grid strong {
+        color: #000;
         border-bottom:1px solid #ccc;
         margin:5px 0;
         display:block;
         padding:0 0 5px;
         font-size:17px;
 }
+.grid p {
+        color: #2E2E2E;
+        border-bottom:1px solid #ccc;
+        margin:5px 0;
+        display:block;
+        padding:0 0 5px;
+        font-size:14px;
+}
 .grid .meta{
         text-align:right;
-        color:#777;
+        color:#000;
         font-style:italic;
 }
 .grid .imgholder img{
@@ -248,7 +258,7 @@ a:hover, a:active{
 
 .block{
         padding: 15px;
-        background:#fff;
+        background:rgba(256, 256, 256, 0.8);
 
         line-height:1.7;
         box-shadow: 0 1px 3px rgba(34,25,25,0.4);
@@ -286,25 +296,30 @@ a:hover, a:active{
 .options{
     width: 250px;
 }
-  .options h3{
-
- text-align: center;
- }
+.options h3{
+    color: black;
+    text-align: center;
+}
 .options strong{
         font-size:14px;
-        text-decoration:underline;
-
+        text-decoration: none;
+        margin: 0px;
+        padding: 0px;
     color: blue;
 }
 .options em{
         font-size:12px;
         font-weight:bold;
-        color: #91DCFF;
+        color: red;
+        margin: 0px;
+        padding: 0px;
      
 }
 .options span{
         color: #2E2E2E;
         font-size:12px;
+                margin: 0px;
+        padding: 0px;
 }
 </style>
   </head>
@@ -352,22 +367,20 @@ a:hover, a:active{
         <div class="block grid options">
                 <h3>Upcoming Events</h3>
                 <p>
-                        <strong>On Nov 19</strong>
-                        <em></em> <br/>
-                        <span>Follow Our Event <a style="color: green;" href="https://www.facebook.com/prempishe">Prem Pishe</a></span>
-                </p>        
+                        <strong>Date : 19<sup>TH</sup> November, 2013</strong>
+                        <em><b>Timing :</b> Between 8 P.M. - 9 P.M.</em>
+                        <span><b>Tags :</b><i> Unknown </i></span>
+                        <span><b>Organise By :</b><i> Unknown </i></span>
+                        <span><b>Location :</b><i> @ Goa.</i></span>
+                </p> 
                 <p>
-                        <strong></strong>
-                        <em></em><br/>
-                        <span></span>
-                </p>        
-                <p>
-                        <strong></strong>
-                        <em></em><br/>
-                        <span></span>
-            <span></span>
-            <span></span>
-                </p>        
+                        <strong>Date : 19<sup>TH</sup> November, 2013</strong>
+                        <em><b>Timing :</b> Between 8 P.M. - 9 P.M.</em>
+                        <span><b>Tags :</b><i> Unknown </i></span>
+                        <span><b>Organise By :</b><i> Unknown </i></span>
+                        <span><b>Location :</b><i> @ Goa.</i></span>
+                </p> 
+        
         </div>
         
         
