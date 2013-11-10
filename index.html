@@ -125,15 +125,26 @@ ul.win7 li
         line-height:25px;
         display:inline;
         float:left;
-    border: white solid 2px;
+    border: white solid 1px;
         text-align:center;
 }
 
-
+ul.win7 a,ul.win7 span{
+    color:#fff;
+    width: 100%;
+  display:block;
+  z-index:2;
+  padding:0 2px;
+  line-height:25px;
+  text-decoration: none;
+}
+ul.win7 a:hover,ul.win7 a:active{
+        color:#91DCFF;
+}
 
 a, span
 {
-    color:#FFFFFF;
+    color:#000;
     width: 100%;
   display:block;
   z-index:2;
@@ -149,8 +160,8 @@ a:hover, a:active{
         width:90%;
     min-width: 1000px;
     height: 90px;
-        background:#000;
-        background:rgba(0, 0, 0, 0.6);
+
+        background:rgba(256, 256, 256, 1);
         padding:0px 0;
     top:0px;
         letter-spacing:1px;
@@ -162,7 +173,7 @@ a:hover, a:active{
 .footer{
 
   min-width: 1000px;
-      height: 28px;
+      height: 25px;
         padding:0px 0;
 
         letter-spacing:1px;
@@ -174,14 +185,14 @@ a:hover, a:active{
 .header h1{
         padding:0 0px;
         margin:0px 0;
-        text-shadow:2px 1px 1px #333, 2px 2px 1px #888;
+        text-shadow:2px 1px 1px #fff, 2px 2px 1px #BFBFBF;
         color:#EAEAEA;
         font-size:40px;
 }
 .header h3{
         padding:0 0px;
         margin:0px 0;
-        text-shadow:2px 1px 1px #333, 2px 2px 1px #888;
+        text-shadow:2px 1px 1px #fff, 2px 2px 1px #BFBFBF;
         color:#EAEAEA;
         font-size:15px;
 }
@@ -216,15 +227,15 @@ a:hover, a:active{
         margin:5px 0;
         display:block;
         padding:0 0 5px;
-        font-size:17px;
+        font-size:15px;
 }
 .grid p {
         color: #2E2E2E;
         border-bottom:1px solid #ccc;
         margin:5px 0;
         display:block;
-        padding:0 0 5px;
-        font-size:14px;
+        padding-bottom:17px;
+        font-size:10px;
 }
 .grid .meta{
         text-align:right;
@@ -277,7 +288,7 @@ a:hover, a:active{
 
 .block h3{
         font-size:22px;
-        color:#7A8489;
+        color:#000;
         margin:0 5px;
         padding-bottom:5px;
         padding-left:10px;
@@ -340,7 +351,7 @@ a:hover, a:active{
   js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script><strong>
-<div style="float:left;padding: 5px;" class="fb-like" data-href="https://www.facebook.com/prempishe" data-colorscheme="dark" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>   
+<div style="float:left;padding: 5px;" class="fb-like" data-href="https://www.facebook.com/prempishe" data-colorscheme="light" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>   
 </strong>
 </div>
 <div style="float:right;width: 30%; padding: 15px; ">
@@ -356,11 +367,13 @@ a:hover, a:active{
         
         <div class="block grid">
                 <div class="imgholder">
-                        <img src="http://www.inwebson.com/demo/blocksit-js/demo2/images/img27.jpg" width="250" height="300" />
+                        <img src="http://www.inwebson.com/demo/blocksit-js/demo2/images/img27.jpg" width="250" height="280" />
                 </div>
-                <strong>Sunset Lake</strong>
-                <p>A peaceful sunset view...</p>
-                <div class="meta">by j osborn</div>
+                <h3 style="font-size: 18px;">Sunset Lake</h3>
+                
+                <p style="margin: 0; padding: 0;">A peaceful sunset view Clicked in GOA...<br />
+                Time: 12:00:12 PM 20<sup style="font-size:8px;">Th</sup>June 2013
+                </p>
         </div>
         
         
